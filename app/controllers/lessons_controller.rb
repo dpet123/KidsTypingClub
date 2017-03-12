@@ -3,9 +3,9 @@ class LessonsController < ApplicationController
   def index
   end
   
-  def lesson
-    params[lesson]
-    redirect_to "/lesson1.html.erb"
+  def lesson1
   end
 
+  def lesson2
+  end
 end
