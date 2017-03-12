@@ -6,9 +6,15 @@
           <h2>Lessons</h2>
           
           <div class="row">
-            <div class="col-md-4"><a><button class="well"><p>Lesson 1</p></button></div></a>
-            <div class="col-md-4"><a><button class="well"><p>Lesson 2</p></button></div></a>
-            <div class="col-md-4"><a><button class="well"><p>Lesson 3</p></button></div></a>
+            <div class="col-md-4"><a><button class="well" name="1"><%= link_to("Lesson 1",
+                  {:controller => 'lessons',
+                    :action => 'lesson1'
+                  }) %></button></div></a>
+            <div class="col-md-4"><a><button class="well" name="2"><%= link_to("Lesson 2",
+                  {:controller => 'lessons',
+                    :action => 'lesson2'
+                  }) %></button></button></div></a>
+            <div class="col-md-4"><a><button class="well" name="3"><p>Lesson 3</p></button></div></a>
           </div>
           
       </div>
