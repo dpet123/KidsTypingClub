@@ -36,26 +36,47 @@
       <div class="col-md-12">
         <h3></h3>
         <ul class="nav nav-pills nav-stacked">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a><i class="fa fa-globe fa-lg"></i>
-                <%= link_to("Lessons",
-                  {:controller => 'lessons',
-                    :action => 'index'
-                  }) %>  
-          </a></li>
-          <li><a><i class="fa fa-user fa-lg"></i>
-          Profile
-          </a></li>
-          <li><a><i class="fa fa-users fa-lg"></i>
-          Users
-          </a></li>
-          <li><a><i class="fa fa-envelope fa-lg"></i>
-          Contact
-          </a></li>
-          <li><a><i class="fa fa-question-circle fa-lg"></i>
-          Help
-          </a></li>
-
+         <li class="menuitems">
+            <%= link_to({:controller => 'welcome',
+                        :action => 'index' }) do %>  
+          <i class="fa fa-home fa-lg"></i>Home
+          <% end %> 
+          </li>
+          
+          <li class="menuitems">
+            <%= link_to({:controller => 'welcome',
+                        :action => 'lessons' }) do %>  
+          <i class="fa fa-globe fa-lg"></i> Lessons
+          <% end %>
+          </li>
+          
+          <li class="menuitems">
+            <%= link_to({:controller => 'users',
+                        :action => 'profile' }) do %>
+          <i class="fa fa-user fa-lg"></i> Profile
+          </li>
+          <% end %>
+          
+          <li class="menuitems">
+            <%= link_to({:controller => 'users',
+                        :action => 'users' }) do %>          
+          <i class="fa fa-users fa-lg"></i> Users
+          </li>
+          <% end %>
+          
+          <li class="menuitems">
+            <%= link_to({:controller => 'welcome',
+                        :action => 'contact' }) do %>          
+          <i class="fa fa-envelope fa-lg"></i> Contact
+          </li>
+          <% end %>
+          
+          <li class="menuitems">
+            <%= link_to({:controller => 'welcome',
+                        :action => 'help' }) do %>          
+          <i class="fa fa-question-circle fa-lg"></i> Help
+          </li>
+          <% end %>
 
         </ul>
       </div>

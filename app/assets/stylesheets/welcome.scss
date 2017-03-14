@@ -63,27 +63,27 @@ body {
 
 //self-created CSS:
 
-.navbar-brand{
-  color: white !important;
-}
 
-.navbar-custom{
+.navbar-custom {
   background-color: #5BC0DE !important;
   background: #5BC0DE !important;
 }
 
-#sidebar .active a{
+#sidebar .active a {
   background-color: #5BC0DE !important;
 }
 
+.menuitems > a:visited {
+  color: #337AB7 !important;
+}
 
+.active { 
+  background-color: white;
+}
 
-
-
-
-
-
-
+.navbar-brand {
+  color: white !important;
+}
 
 
 
